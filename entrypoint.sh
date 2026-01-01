@@ -49,6 +49,6 @@ echo "✅ $AGENT_NAME review completed!"
 echo "=================================="
 
 # Set the action output with agent identification
-echo "::set-output name=response::$RESPONSE"
-echo "::set-output name=agent::$AGENT_NAME"
-echo "::set-output name=agent_version::$AGENT_VERSION"
+echo "response=$RESPONSE" >> $GITHUB_OUTPUT
+echo "agent=$AGENT_NAME" >> $GITHUB_OUTPUT
+echo "agent_version=$AGENT_VERSION" >> $GITHUB_OUTPUT
